@@ -1,0 +1,1296 @@
+/*---------------------------------
+HOME
+---------------------------------*/
+
+@media screen and (min-width: 380px) {
+    .hero {
+        &__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: right top;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .hero {
+        height: 60vh;
+        max-height: 480px;
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__lead {
+            font-size: 24px;
+        }
+
+        &__unit {
+            text-align: left;
+        }
+    }
+
+    .pack-flow {
+        &__lead {
+            justify-content: center;
+
+            &--inner {
+                font-size: 18px;
+                padding-left: 0;
+            }
+        }
+
+        &__item {
+            width: calc(100px + 20rem);
+        }
+
+        &__image {
+            width: 120px;
+        }
+
+        &__text {
+            &--emphasis {
+                font-size: 18px;
+            }
+
+            &--br {
+                display: inline;
+            }
+        }
+
+        &__caption {
+            &--br {
+                display: none;
+            }
+        }
+    }
+
+    .oyakusoku {
+        &__item {
+            font-size: 18px;
+        }
+    }
+
+    .onayami {
+        &__item {
+            font-size: 18px;
+        }
+    }
+
+    .sdgs-character-group {
+        height: 242px;
+        width: auto;
+
+        &__image {
+            width: 103px;
+
+            &:nth-of-type(2) {
+                width: 98px;
+            }
+
+            &:nth-of-type(3) {
+                width: 95px;
+            }
+
+            &:nth-of-type(4) {
+                width: 104px;
+            }
+
+            &:last-of-type {
+                margin-left: -1.5rem;
+                width: 27px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 640px) {
+    .hero {
+        height: 64vh;
+        max-height: 560px;
+    }
+
+    .kinkyu {
+        &-banner {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 3rem auto 1.5rem;
+
+            &__title {
+                font-size: 22px;
+                margin-bottom: 2rem;
+
+                &--br {
+                    display: inline;
+                }
+            }
+
+            &__image {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    .drone-about {
+        &__title {
+            &--br {
+                display: none;
+            }
+        }
+    }
+
+    .onayami {
+        &::after {
+            height: 200px;
+        }
+    }
+
+    .pack {
+        &__title {
+            &--br {
+                display: none;
+            }
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+    }
+
+    .pack-flow {
+        &__list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: calc((100% - 3rem) / 3);
+            text-align: center;
+            margin-bottom: 0;
+            display: block;
+            text-align: center;
+        }
+
+        &__image {
+            width: 240px;
+            margin-right: 0;
+        }
+
+        &__caption {
+            margin-top: 1rem;
+
+            &--br {
+                display: inline;
+            }
+        }
+    }
+
+    .post-3column {
+        &__item {
+            width: calc((100% - 2rem) / 3);
+            margin-right: 1rem;
+
+            &:nth-child(3),
+            &:nth-child(6) {
+                margin-right: 0;
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 740px) {
+    .dekirukoto {
+        &__item {
+            width: calc((100% - 2rem) / 3);
+            margin-bottom: 0;
+
+            &:first-child {
+                margin-right: 0;
+            }
+
+            &:nth-child(2) {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+
+            &:nth-child(4) {
+                margin-right: 0.5rem;
+                margin-top: 2rem;
+            }
+
+            &:nth-child(5) {
+                margin-left: 0.5rem;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .hero {
+        &__title {
+            font-size: 32px;
+        }
+
+        &__lead {
+            font-size: 30px;
+        }
+    }
+
+    .drone-about {
+        display: flex;
+        align-items: flex-start;
+
+        &__title {
+            &--br {
+                display: inline;
+            }
+        }
+
+        &__image {
+            margin-right: 2.5rem;
+            margin-left: 0;
+            margin-bottom: 0;
+            display: inline-block;
+            width: 33.3333%;
+            max-width: none;
+        }
+    }
+
+    .oyakusoku {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        &__title {
+            text-align: left;
+        }
+
+        &__image {
+            margin-left: 2.5rem;
+            margin-right: 0;
+            margin-top: 0;
+        }
+    }
+
+    .dekirukoto {
+        &__item {
+            width: calc((100% - 3rem) / 3);
+
+            &:nth-child(2) {
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+
+            &:nth-child(4) {
+                margin-right: 0.75rem;
+                margin-top: 4rem;
+            }
+
+            &:nth-child(5) {
+                margin-left: 0.75rem;
+                margin-top: 4rem;
+            }
+        }
+
+        &__title {
+
+            &--number {
+                top: -5.75rem;
+                left: 1rem;
+            }
+
+        }
+
+        &__caption {
+
+            &::before {
+                content: "（";
+            }
+
+            &::after {
+                content: "）";
+            }
+        }
+    }
+
+    .yousu {
+        &__item {
+            width: calc((100% - 3rem) / 4);
+            margin-bottom: 0;
+        }
+    }
+
+    .tokuchou {
+        &__item {
+            width: calc((100% - 1.5rem) / 2);
+        }
+    }
+
+    .onayami {
+        width: 66.6666%;
+        margin-left: 33.3333%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        align-items: flex-start;
+        padding-bottom: $layout-space-tablet;
+
+        &::after {
+            content: none;
+        }
+    }
+
+    .home-onayami {
+        background-image: url(../images/machinami.png);
+        background-repeat: no-repeat;
+        background-position: 0 70%;
+        background-size: 120%;
+    }
+
+    .pack {
+        &__unit {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        &__subtitle {
+            text-align: left;
+
+            &--br {
+                display: inline;
+            }
+        }
+
+        &__image {
+            margin-left: 2.5rem;
+            margin-right: 0;
+            margin-top: 0;
+            width: 33.3333%;
+        }
+    }
+
+    .pack-flow {
+        &__caption {
+            &--br {
+                display: inline;
+            }
+        }
+
+        &__item {
+            width: calc((100% - 6rem) / 3);
+            text-align: center;
+        }
+
+        &__lead {
+            height: 3rem;
+
+            &::before {
+                width: calc(100% - 2.5rem);
+                height: 3rem;
+            }
+
+            &::after {
+                border-top: 2rem solid transparent;
+                border-bottom: 2rem solid transparent;
+                border-left: 2.5rem solid $color-main;
+            }
+
+            &--br {
+                display: none;
+            }
+        }
+    }
+
+    .post-3column {
+        &__item {
+            width: calc((100% - 3rem) / 3);
+            margin-right: 1.5rem;
+            margin-bottom: 1.5rem;
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                margin-right: 1.5rem;
+            }
+        }
+    }
+
+    .column {
+        display: flex;
+
+        &__unit {
+            width: 50%;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    .sdgs-info {
+        display: flex;
+        align-items: flex-start;
+
+        &__image {
+            margin-right: 2.5rem;
+            margin-bottom: 0;
+            width: 33.3333%;
+        }
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .kinkyu {
+        &-banner {
+            margin: 4.5rem auto 1.5rem;
+
+            &__title {
+                margin-bottom: 2.5rem;
+
+                &--br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1184px) {
+    .home {
+        &-oyakusoku {
+            @include bg-color;
+        }
+    }
+
+    .kinkyu {
+        &-banner {
+            width: 48rem;
+            margin: 4.5rem auto 1.5rem;
+
+            &__image {
+                margin-right: 3rem;
+            }
+        }
+    }
+
+    .drone-about {
+        align-items: center;
+
+        &__title {
+            &--br {
+                display: none;
+            }
+        }
+
+        &__image {
+            width: 403px;
+            margin-right: 5rem;
+        }
+    }
+
+    .oyakusoku {
+        &__image {
+            margin-left: 5rem;
+        }
+        &__text {
+            &--br {
+                display: none;
+            }
+        }
+    }
+
+    .dekirukoto {
+
+        &__title,
+        &__caption {
+            padding: 0 1rem;
+        }
+    }
+
+    .yousu {
+        &__item {
+            width: calc((100% - 6rem) / 4);
+
+            &--camera {
+                width: calc(50% - .5rem);
+                margin-bottom: 1rem;
+
+                &:nth-child(3),
+                &:nth-child(4) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .tokuchou {
+        &__item {
+            width: calc((100% - 2.5rem) / 2);
+            margin-bottom: 0;
+
+            &:first-child,
+            &:nth-child(2) {
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        &__heading {
+            font-size: 28px;
+            padding: 0.5rem 1rem 0.5rem 2rem;
+        }
+
+        &__text {
+            font-size: 24px;
+            padding: 1.5rem 2rem;
+        }
+    }
+
+    .onayami {
+        padding-left: 5rem;
+        width: 60%;
+        margin-left: 40%;
+    }
+
+    .pack {
+        &__image {
+            margin-left: 5rem;
+            width: 400px;
+        }
+    }
+
+    .pack-flow {
+        &__caption {
+            &--br {
+                display: none;
+            }
+        }
+
+        &__item {
+            width: calc((100% - 8rem) / 3);
+            text-align: center;
+        }
+    }
+
+    .post-3column {
+        &__item {
+            width: calc((100% - 4rem) / 3);
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    .sdgs-info {
+        &__image {
+            margin-right: 5rem;
+            width: 467px;
+        }
+    }
+
+    .sdgs-info-button {
+        margin-top: 2rem;
+
+        .sdgs-button {
+            width: 432px;
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .onayami {
+        width: 50%;
+        margin-left: 50%;
+        padding-right: 0;
+        padding-bottom: $layout-space;
+    }
+}
+
+
+/*---------------------------------
+drone-research
+---------------------------------*/
+
+@media screen and (min-width: 480px) {
+    .area {
+        &__lead {
+            text-align: center;
+
+            &--br {
+                display: inline;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .area {
+        &__text {
+            &--br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .photo-sample {
+        &__image {
+            margin-bottom: 0;
+            width: calc(25% - 0.5rem);
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .drone-service {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &__image {
+            &--mobile {
+                display: none;
+            }
+
+            &--pc {
+                display: block;
+                margin-left: 2.5rem;
+                margin-top: 3rem;
+                width: 40%;
+            }
+        }
+    }
+
+    .area {
+        &__lead {
+            &--br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1184px) {
+    .drone-service {
+        &__unit {
+            width: 41.75rem;
+        }
+
+        &__image {
+            &--pc {
+                width: 404px;
+            }
+        }
+    }
+
+    .photo-sample {
+        display: flex;
+        justify-content: space-between;
+
+        &__unit {
+            width: calc(50% - 1.25rem);
+            margin-bottom: 0;
+        }
+
+        &__image {
+            margin-bottom: 1rem;
+            width: calc(50% - 0.5rem);
+
+            &:nth-of-type(3) {
+                margin-bottom: 0;
+            }
+
+            &:nth-of-type(4) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+/*---------------------------------
+price
+---------------------------------*/
+
+@media screen and (min-width: 640px) {
+    .price {
+        &__lead {
+            &--br {
+                display: none;
+            }
+        }
+    }
+
+    .price-table {
+        border-bottom: none;
+
+        &__heading,
+        &__data {
+            display: table-cell;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+
+    .price-sample {
+        &__unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__d-list {
+            display: flex;
+            flex-wrap: wrap;
+            width: 35rem;
+        }
+
+        &__term {
+            width: 20rem;
+        }
+
+        &__description {
+            width: 15rem;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__total {
+            width: 35rem;
+        }
+    }
+
+    .price-list {
+        &__data {
+            font-size: 22px;
+        }
+
+        &__price {
+            &--kakaku {
+                font-size: 30px;
+            }
+
+            &--zeikomi {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .price {
+        &__subtitle {
+            margin-top: 3rem;
+        }
+    }
+
+    .price-sample {
+        &__d-list {
+            font-size: 20px;
+            width: 28em;
+        }
+
+        &__term {
+            width: 14em;
+        }
+
+        &__description {
+            width: 14em;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__total {
+            width: 28em;
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 1184px) {
+    .price {
+        &__subtitle {
+            margin-top: 4rem;
+        }
+    }
+}
+
+
+/*---------------------------------
+flow
+---------------------------------*/
+
+@media screen and (min-width: 640px) {
+    .flow-box {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+
+        &__unit {
+            padding: 2rem;
+            max-width: none;
+            margin-left: 0;
+        }
+
+        &__title {
+            text-align: left;
+
+            &--number {
+                display: inline-block;
+                margin-right: 1rem;
+                margin-left: 0;
+            }
+        }
+
+        &__image {
+            width: 180px;
+            margin-left: auto;
+            margin-right: 0;
+            margin-top: 0;
+        }
+    }
+
+    .flow-pack {
+        &__title {
+            &--br {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .flow-box {
+        &__image {
+            width: 240px;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .flow-box {
+        margin-bottom: 2rem;
+
+        &__title {
+            &--number {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1056px) {
+    .flow-box {
+        width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1184px) {
+    .flow-box {
+        margin-bottom: 2.5rem;
+
+        &__unit {
+            padding: 2rem 0 2rem 3rem;
+        }
+
+        &__title {
+            &--number {
+                margin-right: 1.5rem;
+            }
+        }
+
+        &__text {
+            width: 41.75rem;
+        }
+    }
+}
+
+/*---------------------------------
+company
+---------------------------------*/
+
+@media screen and (min-width: 480px) {
+    .company-data {
+        &__d-list {
+            font-size: 16px;
+        }
+
+        &__term,
+        &__description {
+            padding: 1rem;
+        }
+
+        &__term {
+            width: 6.5rem;
+        }
+
+        &__description {
+            width: calc(100% - 6.5rem);
+        }
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .company-about {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+
+        &__title {
+            display: block;
+        }
+
+        &__image {
+            margin-left: 2.5rem;
+            margin-right: 0;
+            width: 33.3333%;
+            margin-bottom: 0;
+        }
+    }
+
+    .member {
+        &-card {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ddd;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            &__image {
+                margin-right: 2.5rem;
+                margin-left: 0;
+                width: 33.3333%;
+            }
+
+            &__unit {
+                max-width: none;
+            }
+        }
+
+        &__name {
+            text-align: left;
+        }
+    }
+
+    .sdgs-heisei-kensetsu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &__text {
+            &--br {
+                display: inline;
+            }
+        }
+    }
+
+    .company-data {
+        &__d-list {
+            width: 40rem;
+        }
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .sdgs-effort-box {
+        display: flex;
+        padding: 2em;
+        align-items: center;
+
+        &__image {
+            margin-left: 2.5rem;
+            width: calc(50% - 2.5rem);
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+
+        &__unit {
+            max-width: none;
+        }
+
+        &__title {
+            text-align: left;
+        }
+    }
+
+    .sdgs-effort-torikumi {
+        margin-top: 2.5rem;
+
+        &__title {
+            text-align: left;
+        }
+    }
+}
+
+@media screen and (min-width: 1184px) {
+    .company-about {
+        &__image {
+            margin-left: 5rem;
+            width: 400px;
+        }
+
+        .works {
+            &__list {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+
+                &:first-of-type {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            &__item {
+                width: calc((100% - 6rem) / 4);
+            }
+        }
+    }
+
+    .member {
+        &-card {
+            &__image {
+                margin-right: 3.5rem;
+                margin-left: 0;
+                width: 352px;
+            }
+        }
+
+        &-table {
+            width: 26rem;
+        }
+    }
+
+    .sdgs-heisei-kensetsu {
+        flex-direction: row;
+        align-items: flex-start;
+
+        &__text {
+            &--br {
+                display: inline;
+            }
+        }
+
+        &__images {
+            margin-top: -1.5rem;
+        }
+    }
+
+    .sdgs-effort-box {
+        padding: 3.5em;
+
+        &__image {
+            margin-left: 3rem;
+            width: 400px;
+        }
+    }
+}
+
+/*---------------------------------
+contact
+---------------------------------*/
+
+@media screen and (max-width: 599px) {
+    .form__description--about {
+        text-align: left;
+
+        .wpcf7-list-item {
+            padding-top: 0;
+            padding-right: 46px;
+            background-position: center right;
+            margin-right: 0;
+            display: block;
+            height: 37px;
+            line-height: 37px;
+            width: 17rem;
+            margin-bottom: 1em;
+
+            &.last {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .contact-tel {
+        &__number {
+            font-size: 34px;
+
+            &--text {
+                font-size: 32px;
+            }
+        }
+
+        &__d-list {
+            width: 28em;
+        }
+    }
+
+    .form {
+        &-area {
+            padding: 2.5rem;
+        }
+    }
+}
+
+
+@media screen and (min-width: 640px) {
+    .contact-tel {
+        &__number {
+            font-size: 36px;
+
+            &--text {
+                font-size: 34px;
+            }
+        }
+
+        &__d-list {
+            font-size: 16px;
+        }
+    }
+
+    .contact-form {
+        &__lead {
+            &--br {
+                display: inline;
+            }
+        }
+    }
+
+    .form__date {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        span {
+            width: calc(100% - 10em);
+        }
+
+        input {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .form {
+        &-area {
+            max-width: 55rem;
+            margin-top: 2rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3rem;
+        }
+
+        &__d-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__term {
+            width: 16rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__description {
+            width: calc(100% - 16rem);
+        }
+
+        &__term,
+        &__description {
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+    }
+
+    .form-button-area {
+        margin-left: 16rem;
+        margin-top: 1.5rem;
+        text-align: left;
+        width: 166px;
+    }
+
+    .form__description--about {
+        text-align: left;
+    }
+
+    .form__term--about {
+        display: inherit;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .contact {
+        &__column {
+            align-items: flex-start;
+
+            &:first-of-type {
+                margin-right: 3rem;
+                margin-bottom: 0;
+                width: 512px;
+                flex-shrink: 0;
+            }
+            &:last-of-type {
+                width: calc(100% - 512px);
+            }
+        }
+    }
+
+    .contact-tel,
+    .contact-line {
+        flex-direction: row;
+    }
+
+    .contact-tel {
+        &__d-list {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 1184px) {
+    .form {
+        &-area {
+            max-width: 60rem;
+            padding: 5rem;
+        }
+    }
+}

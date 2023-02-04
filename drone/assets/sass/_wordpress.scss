@@ -1,0 +1,395 @@
+.wp-block-embed.is-type-wp-embed {
+    padding: 0;
+    border: 1px solid #eee;
+}
+
+.wp-block-embed {
+    .wp-block-embed__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+
+        blockquote.wp-embedded-content {
+            border: none;
+            padding: 0 1rem;
+            font-weight: emphasis;
+        }
+
+        iframe.wp-embedded-content {
+            position: relative !important;
+            clip: auto !important;
+        }
+    }
+}
+
+.wp-block-group.has-background {
+    padding: 1rem 2rem;
+}
+
+.wp-block-table {
+
+    th,
+    td {
+        padding: 0.5em 0.75em;
+        border: 1px solid #eee;
+    }
+}
+
+.attachment-large {
+    height: auto;
+}
+
+.wp-block-image {
+    figcaption {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+    }
+}
+
+.wp-block-button.no-border-radius,
+.wp-block-button__link.no-border-radius,
+.is-style-outline .wp-block-button__link,
+.wp-block-button__link.is-style-outline {
+    transition: $transition;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.wp-block-search,
+.search-form {
+    display: flex;
+
+    .wp-block-search__label,
+    .screen-reader-text {
+        display: none;
+    }
+
+    label {
+        width: calc(100% - 60px);
+    }
+
+    input[type="search"] {
+        background-color: #eee;
+        padding: 0 5px;
+        height: 40px;
+        width: 100%;
+        border: none;
+
+        &.wp-block-search__input {
+            width: calc(100% - 60px);
+            ;
+        }
+    }
+
+    input[type="submit"],
+    button.wp-block-search__button {
+        height: 40px;
+        width: 60px;
+        background-color: $color-main;
+        color: #fff;
+        transition: $transition;
+        margin-left: 0;
+        border: none;
+        padding: 0;
+
+        &:hover {
+            background-color: rgba($color-main, .7);
+        }
+    }
+}
+
+pre.wp-block-code {
+    white-space: pre-wrap;
+    padding: 1em;
+    background-color: #f5f5f5;
+}
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    padding: 0 0 1rem 1rem;
+}
+
+.aligncenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    .alignright,
+    .alignleft,
+    .wp-caption.alignright,
+    .wp-caption.alignleft {
+        max-width: 50%;
+    }
+}
+
+
+/*ページナビプラグイン　WP-PageNavi
+----------------------------------*/
+
+.wp-pagenavi {
+
+    .pages,
+    .first,
+    .last,
+    .current,
+    .page,
+    .nextpostslink,
+    .previouspostslink,
+    .extend {
+        padding: 0.5em 0.7em;
+        line-height: 1;
+        margin: 0 0.1em;
+        display: inline-block;
+        border: 1px solid #eee;
+        background-color: #eee;
+    }
+
+    .pages {
+        background-color: #eee;
+    }
+
+    .extend {
+        padding: 0.3em;
+        margin: 0;
+        background-color: transparent;
+        border: none;
+    }
+
+    .first,
+    .last,
+    .page,
+    .nextpostslink,
+    .previouspostslink {
+        color: $color-black;
+        text-decoration: none;
+
+        &:hover {
+            border: 1px solid $color-black;
+            color: $color-black;
+            background-color: #fff;
+        }
+    }
+
+    .current {
+        border: 1px solid $color-black;
+        background-color: $color-black;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .wp-pagenavi {
+
+        .pages,
+        .extend {
+            display: none;
+        }
+    }
+}
+
+
+
+/*TOC+
+----------------------------------*/
+
+#toc_container {
+    padding: 1rem;
+}
+
+#toc_container li {
+    margin-bottom: 0.5em;
+}
+
+#toc_container a {
+    color: #666;
+}
+
+
+/* Contact Form 7
+----------------------------------*/
+
+.wpcf7-checkbox,
+.wpcf7-radio {
+    margin-left: -1em;
+    display: block;
+}
+
+.wpcf7 h4 {
+    margin-bottom: 10px;
+    font-weight: emphasis;
+    margin-top: 25px;
+}
+
+.wpcf7 h4:first-of-type {
+    margin-top: 0;
+}
+
+.wpcf7 br {
+    display: none;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="date"],
+.wpcf7 textarea,
+.wpcf7 select {
+    background-color: #f3f3f3;
+    color: #555;
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    min-height: 50px;
+    border: none;
+}
+
+.wpcf7 select {
+    width: 80px;
+    margin-right: 0.25em;
+}
+
+.wpcf7 input[type="date"] {
+    border: none;
+}
+
+.wpcf7-not-valid-tip {
+    margin-top: .5rem;
+}
+
+.wpcf7 input[type="submit"] {
+    @include button-common();
+    background-color: $color-main;
+    border-color: $color-main;
+    border-radius: 0;
+}
+
+.wpcf7 input[type="submit"]:hover {
+    @include button-common-hover();
+    color: $color-main;
+    border-color: $color-main;
+}
+
+.form-button-area {
+    position: relative;
+}
+
+.wpcf7-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: 0;
+}
+
+.wpcf7 form.submitting .wpcf7-submit {
+    opacity: .8;
+}
+
+.wpcf7 label {
+    font-size: 16px;
+}
+
+.form-caption {
+    font-size: 14px;
+    display: block;
+}
+
+.form-required {
+    font-size: 13px;
+    color: #dc3232;
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    padding: 1rem;
+    max-width: 600px;
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (min-width: 360px) {
+    .wpcf7 select {
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wpcf7 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .wpcf7 form .wpcf7-response-output {
+        text-align: center;
+    }
+}
+
+/*関連記事　Yet Another Related Posts Plugin (YARPP)
+----------------------------------*/
+
+body {
+    .yarpp {
+        &-related {
+            a {
+                font-weight: normal;
+            }
+
+
+            p {
+                line-height: 1.5;
+                margin: 0;
+                font-weight: normal;
+            }
+
+        }
+
+        &__title {
+            @include font-m;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    }
+}
+
+/*WPBeginner's Compact Archives
+----------------------------------*/
+.wp-container-1 {
+    color: #aaa;
+
+    strong {
+        display: block;
+        color: #fff;
+
+        &::after {
+            content: '年';
+            color: $color-black;
+            margin-left: -.8em;
+        }
+    }
+
+    .wp-block-group__inner-container>ul>li {
+        font-size: 16px;
+    }
+
+    span,
+    a {
+        display: inline-block;
+        margin-right: .4em;
+    }
+}

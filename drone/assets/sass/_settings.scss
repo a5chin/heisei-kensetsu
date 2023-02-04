@@ -1,0 +1,195 @@
+$font-awsome: "Font Awesome 5 Free";
+$font-mincho: "Times New Roman",
+"游明朝",
+YuMincho,
+"Hiragino Mincho ProN W3",
+"ヒラギノ明朝 ProN W3",
+"Hiragino Mincho ProN",
+"HG明朝E",
+"ＭＳ Ｐ明朝",
+"ＭＳ 明朝",
+serif;
+$color-main: #14923d;
+$color-sub: #45a1d2;
+$color-bg: #f8feef;
+$color-black: #222;
+$mb-title: 0.5em;
+$space-content: 1.2rem;
+$layout-space-mobile:3.5rem;
+$layout-space-tablet:4rem;
+$layout-space:6rem;
+$transition: all 0.3s ease;
+$width-container: 1120px;
+$line-height-p: 2;
+$line-height-page: 1.7;
+$box-shadow: 0px 0px 1px 2px rgba(10, 10, 10, 0.02);
+$background-opacity-white: rgba(255, 255, 255, 0.8);
+$opacity-img: 0.8;
+$breakpoint: ( "mobile-large": "screen and (min-width: 480px)", "tablet": "screen and (min-width: 800px)", "pc": "screen and (min-width: 1184px)", );
+@mixin mq($bp) {
+    @media #{map-get($breakpoint, $bp)} {
+        @content;
+    }
+}
+
+@mixin container() {
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @include mq(tablet) {
+        width: calc(100% - 6rem);
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    @include mq(pc) {
+        width: $width-container;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@mixin bg-color() {
+    padding-top: $layout-space-mobile;
+    padding-bottom: $layout-space-mobile;
+    background-color: $color-bg;
+    @include mq(tablet) {
+        padding-top: $layout-space-tablet;
+        padding-bottom: $layout-space-tablet;
+    }
+    @include mq(pc) {
+        padding-top: $layout-space;
+        padding-bottom: $layout-space;
+    }
+}
+
+@mixin layout-space-top() {
+    margin-top: $layout-space-mobile;
+    @include mq(tablet) {
+        margin-top: $layout-space-tablet;
+    }
+    @include mq(pc) {
+        margin-top: $layout-space;
+    }
+}
+
+@mixin layout-space-bottom() {
+    margin-bottom: $layout-space-mobile;
+    @include mq(tablet) {
+        margin-bottom: $layout-space-tablet;
+    }
+    @include mq(pc) {
+        margin-bottom: $layout-space;
+    }
+}
+
+@mixin image-object-fit-wrapper() {
+    padding-top: 56.25%;
+    content: "";
+    display: block;
+}
+
+@mixin image-object-fit-image() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin button-common() {
+    color: #fff;
+    background-color: $color-sub;
+    border: 2px solid $color-sub;
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2.5rem;
+    svg {
+        display: inline-block;
+        margin-right: 0.5rem;
+    }
+    @include mq(tablet) {
+        font-size: 18px;
+    }
+}
+
+@mixin button-common-hover() {
+    background-color: #fff;
+    border: 2px solid $color-sub;
+    color: $color-sub;
+}
+
+@mixin title-common() {
+    font-size: 28px;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 1em;
+    @include mq(tablet) {
+        font-size: 30px;
+    }
+    @include mq(pc) {
+        font-size: 36px;
+    }
+}
+
+@mixin title-l() {
+    font-size: 22px;
+    margin-bottom: 1em;
+    font-weight: normal;
+    @include mq(tablet) {
+        font-size: 24px;
+    }
+    @include mq(pc) {
+        font-size: 28px;
+    }
+}
+
+@mixin font-xl() {
+    font-size: 24px;
+    @include mq(tablet) {
+        font-size: 28px;
+    }
+    @include mq(pc) {
+        font-size: 32px;
+    }
+}
+
+@mixin font-l() {
+    font-size: 22px;
+    @include mq(tablet) {
+        font-size: 24px;
+    }
+    @include mq(pc) {
+        font-size: 28px;
+    }
+}
+
+@mixin font-m() {
+    font-size: 20px;
+    @include mq(tablet) {
+        font-size: 22px;
+    }
+    @include mq(pc) {
+        font-size: 24px;
+    }
+}
+
+@mixin check-list() {
+    margin-bottom: 0.5em;
+    position: relative;
+    padding-left: 1.2em;
+    svg {
+        color: $color-main;
+        position: absolute;
+        top: 0.25em;
+        left: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

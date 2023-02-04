@@ -1,0 +1,9 @@
+.editor-post-title .editor-post-title__input {
+    font-size: 24px
+  }
+  
+  @media screen and (max-width: 782px) {
+    .editor-post-title .editor-post-title__input {
+      font-size: 20px
+    }
+  }
